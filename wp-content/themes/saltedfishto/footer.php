@@ -3,7 +3,15 @@
                     <a href="https://youtube.com/FollowAndrew">FollowAndrew</a>
                 </p>
                 <?php
-                    dynamic_sidebar( 'footer-1' )
+                    wp_nav_menu(
+                        array(
+                            'menu' => 'footer',
+                            'container' => '',
+                            'theme_location' => 'footer',
+                            'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
+                        )
+                    );
+                    dynamic_sidebar( 'footer-widget' )
                 ?>
             </footer>
         </div>
