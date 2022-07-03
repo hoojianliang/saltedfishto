@@ -42,24 +42,35 @@ add_action( 'wp_enqueue_scripts', 'saltedfishto_register_scripts' );
 function saltedfishto_widget_areas() {
 	register_sidebar(
 		array(
-			'before_title' => '<h2>',
-			'after_title' => '</h2>',
+			'before_title' => '<div>',
+			'after_title' => '</div>',
 			'before_widget' => '',
 			'after_widget' => '',
-			'name' => 'Sidebar Area',
-			'id' => 'sidebar-widget',
-			'description' => 'Sidebar Widget Area'
+			'name' => 'Footer Area 1',
+			'id' => 'footer-widget-1',
+			'description' => 'Footer Widget Area 1'
 		)
 	);
 	register_sidebar(
 		array(
-			'before_title' => '<h2>',
-			'after_title' => '</h2>',
+			'before_title' => '<div>',
+			'after_title' => '</div>',
 			'before_widget' => '',
 			'after_widget' => '',
-			'name' => 'Footer Area',
-			'id' => 'footer-widget',
-			'description' => 'Footer Widget Area'
+			'name' => 'Footer Area 2',
+			'id' => 'footer-widget-2',
+			'description' => 'Footer Widget Area 2'
+		)
+	);
+	register_sidebar(
+		array(
+			'before_title' => '<div>',
+			'after_title' => '</div>',
+			'before_widget' => '',
+			'after_widget' => '',
+			'name' => 'Footer Area 3',
+			'id' => 'footer-widget-3',
+			'description' => 'Footer Widget Area 3'
 		)
 	);
 }
@@ -185,7 +196,6 @@ $args = array(
     'width'         => 1280,
     'flex-height'   => true,
     'height'        => 400,
-    'default-image' => get_template_directory_uri() . '/assets/images/header.gif',
 );
 add_theme_support( 'custom-header', $args );
 

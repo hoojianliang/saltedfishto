@@ -32,14 +32,30 @@ body.dark-mode{
     color: var(--dark-accent);
 }
 
+.flex-wrapper{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-wrapper {
+    flex: 1 1 auto;
+}
+
+.sfto-footer {
+    z-index: 1020;
+}
+
 .sfto-sticky-top {
     position: fixed;
     width:100%;
     top: 0;
     z-index: 1020;
 }
+
 .sfto-nav .logo{
-    width:48px;
+    width: 48px;
 }
 
 .sfto-nav {
@@ -56,7 +72,7 @@ body.dark-mode{
 }
 
 .sfto-nav.transparent-bg ul>li {
-    text-shadow: -.5rem -4px .5rem var(--white), -.5rem 4px .5rem var(--white), .5rem -4px .5rem var(--white), .5rem 4px .5rem var(--white);
+    text-shadow: -.5rem -.25rem .5rem var(--white), -.5rem .25rem .5rem var(--white), .5rem -.25rem .5rem var(--white), .5rem .25rem .5rem var(--white);
 }
 .sfto-nav.transparent-bg .nav-link {
     color: rgba(var(--black-rgb),1);
@@ -105,11 +121,10 @@ body.dark-mode{
 
 div.sfto-banner {
     width: 100%;
-    height: 520px;
+    height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    box-shadow: inset 0 -200px 80px -120px var(--black);
 }
 
 .sfto-banner-seperator {
@@ -184,12 +199,72 @@ div.sfto-banner {
     border-color: var(--dark-accent);
 }
 
-/*
-.main-wrapper div {
-    background-color: #FFFFFF;
+.footer-divider {
+    font-family: "Share Tech Mono", monospace;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    color: var(--accent);
+    text-shadow: .25rem .25rem .25rem rgba(var(--accent-rgb), .5);
+    white-space: nowrap;
 }
-.dark-mode .main-wrapper div{
-    background-color: #000000;
+.footer-divider::before,
+.footer-divider::after {
+    content: '';
+    display: block;
+    height: 0.2rem;
+    min-width: 40vw;
 }
-*/
+.footer-divider::before {
+    margin-right: 2rem;
+    background: linear-gradient(to right, var(--primary), rgba(var(--accent-rgb)));
+}
+.footer-divider::after {
+    margin-left: 2rem;
+    background: linear-gradient(to left, var(--primary), rgba(var(--accent-rgb)));
+} 
+.dark-mode .footer-divider {
+    color: var(--dark-accent);
+    text-shadow: .25rem .25rem .25rem rgba(var(--dark-accent-rgb), .5);
+}
+.dark-mode .footer-divider::before {
+    background: linear-gradient(to right, var(--dark-primary), rgba(var(--dark-accent-rgb)));
+}
+.dark-mode .footer-divider::after {
+    background: linear-gradient(to left, var(--dark-primary), rgba(var(--dark-accent-rgb)));
+} 
 
+footer a {
+    color: rgba(var(--accent-rgb), .7);
+    line-height: 0;
+    text-decoration: none;
+}
+.dark-mode footer a {
+    color: rgba(var(--dark-accent-rgb), .7);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li:before {
+    font-family: "Share Tech Mono", monospace;
+    content:"><\\{'>  ";
+    text-shadow: .25rem .25rem .25rem rgba(var(--accent-rgb), .5);
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+.dark-mode footer a:hover {
+    color: var(--dark-accent);
+}
+
+footer a:visited {
+    color: rgba(var(--accent-rgb), .7);
+}
+.dark-mode footer a:visited {
+    color: rgba(var(--dark-accent-rgb), .7);
+}
