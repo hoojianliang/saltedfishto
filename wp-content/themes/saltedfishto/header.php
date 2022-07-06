@@ -49,13 +49,15 @@
                             <i class="fas fa-moon toggle dark-toggle sfto-fa-button sfto-fa-border"></i>
                         </div>
                         <div class="d-flex justify-content-end">
-                            <div class="input-group">
-                                <input type="text" class="form-control sfto-transparent" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                <span class="input-group-text sfto-transparent"><i class="fas fa-search sfto-fa-button sfto-fa-border"></i></span>
-                            </div>
+                            <form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url( '/' ); ?>">
+                                <div class="input-group">
+                                    <input type="text" name="s" id="s" class="form-control sfto-transparent" placeholder="Search" aria-label="Search" aria-describedby="ssearch-bar">
+                                    <span class="input-group-text sfto-transparent"><button type="submit"><i class="fas fa-search sfto-fa-button sfto-fa-border"></i></button></span>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
-        <section class="main-wrapper container">
+        <section class="main-wrapper container my-4">
