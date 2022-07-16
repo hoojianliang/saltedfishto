@@ -10,9 +10,13 @@ Author URI: https://www.google.com/
 
 :root {
     --primary: #DFF2F2;
+    --primary-rgb: 223,242,242;
     --secondary: #BAD9D9;
+    --secondary-rgb: 186,217,217;
     --dark-primary: #023059;
+    --dark-primary-rgb: 2,48,89;
     --dark-secondary: #025373;
+    --dark-secondary-rgb: 2,83,115;
     --accent: #0C0B0D;
     --accent-rgb: 12, 11, 13;
     --dark-accent: #DFF2F2;
@@ -21,13 +25,14 @@ Author URI: https://www.google.com/
     --white-rgb: 255, 255, 255;
     --black: #000000;
     --black-rgb: 0, 0, 0;
+    --elementor-primary: #37368e;
 }
 
 body {
     background-color: var(--primary);
     color: var(--accent);
 }
-body.dark-mode{
+body.dark-mode {
     background-color: var(--dark-primary);
     color: var(--dark-accent);
 }
@@ -59,8 +64,52 @@ body.dark-mode{
     flex: 1 1 auto;
 }
 
-.sfto-footer {
-    z-index: 1020;
+.main-wrapper a {
+    color: rgba(var(--accent-rgb), .7);
+    line-height: 0;
+    text-decoration: none;
+}
+.dark-mode .main-wrapper a {
+    color: rgba(var(--dark-accent-rgb), .7);
+}
+
+.main-wrapper a:hover {
+    color: var(--accent);
+}
+.dark-mode .main-wrapper a:hover {
+    color: var(--dark-accent);
+}
+
+.main-wrapper a:visited {
+    color: rgba(var(--accent-rgb), .7);
+}
+.dark-mode .main-wrapper a:visited {
+    color: rgba(var(--dark-accent-rgb), .7);
+}
+
+.main-wrapper .table {
+    color: var(--accent);
+}
+.dark-mode .main-wrapper .table {
+    color: var(--dark-accent);
+}
+
+.main-wrapper .sfto-border {
+    border: 1px solid;
+    border-color: rgba(var(--accent-rgb), .7)
+}
+.dark-mode .main-wrapper .sfto-border {
+    border: 1px solid;
+    border-color: rgba(var(--dark-accent-rgb), .7)
+}
+
+.main-wrapper .sfto-border-top {
+    border-top: 1px solid;
+    border-color: rgba(var(--accent-rgb), .5)
+}
+.dark-mode .main-wrapper .sfto-border-top {
+    border-top: 1px solid;
+    border-color: rgba(var(--dark-accent-rgb), .5)
 }
 
 .sfto-sticky-top {
@@ -352,3 +401,149 @@ footer a:visited {
       transform: translateY(0em);
     }
 }
+
+.eael-elements-flip-box-front-container {
+    background-color: var(--primary);
+}
+.dark-mode .eael-elements-flip-box-front-container {
+    background-color: var(--dark-primary);
+}
+.eael-elements-flip-box-front-container .eael-elements-flip-box-content {
+    color: var(--accent);
+}
+.dark-mode .eael-elements-flip-box-front-container .eael-elements-flip-box-content {
+    color: var(--dark-accent);
+}
+
+.eael-elements-flip-box-rear-container {
+    background-color: rgba(var(--dark-primary-rgb),.8);
+}
+.dark-mode .eael-elements-flip-box-rear-container {
+    background-color: rgba(var(--primary-rgb),.8);
+}
+.eael-elements-flip-box-rear-container .eael-elements-flip-box-content {
+    color: var(--dark-accent);
+}
+.dark-mode .eael-elements-flip-box-rear-container .eael-elements-flip-box-content {
+    color: var(--accent);
+}
+
+.eael-elements-flip-box-rear-container a.flipbox-button {
+    background-color: var(--secondary);
+    color: var(--accent);
+}
+.dark-mode .eael-elements-flip-box-rear-container a.flipbox-button {
+    background-color: var(--dark-secondary);
+    color: var(--dark-accent);
+}
+.eael-elements-flip-box-rear-container a.flipbox-button:hover {
+    background-color:  rgba(var(--secondary-rgb),.5);
+}
+.dark-mode .eael-elements-flip-box-rear-container a.flipbox-button:hover {
+    background-color: rgba(var(--dark-secondary-rgb),.5);
+}
+
+.elementor-widget-eael-feature-list .eael-feature-list-items .eael-feature-list-item .eael-feature-list-icon-box .eael-feature-list-icon-inner {
+    background-color: rgba(var(--dark-primary-rgb),.8);
+}
+.dark-mode .elementor-widget-eael-feature-list .eael-feature-list-items .eael-feature-list-item .eael-feature-list-icon-box .eael-feature-list-icon-inner {
+    background-color: rgba(var(--primary-rgb),.8);
+}
+
+.elementor-widget-eael-feature-list .eael-feature-list-items.stacked .eael-feature-list-icon-box .eael-feature-list-icon {
+    color: var(--dark-accent);
+}
+.dark-mode .elementor-widget-eael-feature-list .eael-feature-list-items.stacked .eael-feature-list-icon-box .eael-feature-list-icon {
+    color: var(--accent);
+}
+
+.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,
+.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after {
+    background-color: rgba(var(--accent-rgb),.7);
+}
+.dark-mode .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,
+.dark-mode .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after {
+    background-color: rgba(var(--dark-accent-rgb),.7);
+}
+
+.elementor-divider-separator .elementor-icon {
+    color: rgba(var(--accent-rgb),.7);
+}
+.dark-mode .elementor-divider-separator .elementor-icon {
+    color: rgba(var(--dark-accent-rgb),.7);
+}
+
+/* start -- copy to timeline */
+.cool-timeline.white-timeline:before, 
+.cool-timeline.white-timeline.one-sided:before {
+    background-color: var(--dark-primary);
+    background-image: -webkit-linear-gradient(top,var(--dark-primary) 0%, var(--dark-primary) 8%, var(--dark-primary) 92%, var(--dark-primary) 100%);
+}
+.cool-timeline.white-timeline .timeline-year {
+    background: var(--dark-primary);
+    box-shadow: 0 0 0 4px var(--dark-accent), inset 0 0 0 2px rgb(0 0 0 / 5%), 0 0 0 8px var(--dark-primary);
+}
+.cool-timeline .timeline-year {
+    color: var(--dark-accent)
+}
+.cool-timeline.white-timeline .timeline-post.even .icon-dot-full, 
+.cool-timeline.one-sided.white-timeline .timeline-post.even .icon-dot-full, 
+.cool-timeline.white-timeline .timeline-post.odd .icon-dot-full, 
+.cool-timeline.one-sided.white-timeline .timeline-post.odd .icon-dot-full {
+    background: var(--dark-primary);
+}
+.cool-timeline.white-timeline .timeline-post.even .timeline-meta .meta-details, 
+.ctl_road_map_wrp li.even .ctl-story-year, 
+.ctl_road_map_wrp li.even .ctl-story-title, 
+.ctl_road_map_wrp li.even .ctl-story-title a, 
+.cool-timeline.white-timeline .timeline-post.odd .timeline-meta .meta-details, 
+.ctl_road_map_wrp li.odd .ctl-story-year, 
+.ctl_road_map_wrp li.odd .ctl-story-title, 
+.ctl_road_map_wrp li.odd .ctl-story-title a {
+    color: var(--accent);
+}
+.clean-skin-tm .cool-timeline.white-timeline  .timeline-post.even .timeline-content h2.content-title, 
+.clean-skin-tm .cool-timeline.white-timeline  .timeline-post.odd .timeline-content h2.content-title {
+    color: var(--accent);
+}
+.cool-timeline .light-grey-post .timeline-content {
+    color: var(--accent);
+}
+
+.dark-mode .cool-timeline.white-timeline:before, 
+.dark-mode .cool-timeline.white-timeline.one-sided:before {
+    background-color: var(--primary);
+    background-image: -webkit-linear-gradient(top,var(--primary) 0%, var(--primary) 8%, var(--primary) 92%, var(--primary) 100%);
+}
+.dark-mode .cool-timeline.white-timeline .timeline-year {
+    background: var(--primary);
+    box-shadow: 0 0 0 4px var(--accent), inset 0 0 0 2px rgb(0 0 0 / 5%), 0 0 0 8px var(--primary);
+}
+.dark-mode .cool-timeline .timeline-year {
+    color: var(--accent)
+}
+.dark-mode .cool-timeline.white-timeline .timeline-post.even .icon-dot-full, 
+.dark-mode .cool-timeline.one-sided.white-timeline .timeline-post.even .icon-dot-full, 
+.dark-mode .cool-timeline.white-timeline .timeline-post.odd .icon-dot-full, 
+.dark-mode .cool-timeline.one-sided.white-timeline .timeline-post.odd .icon-dot-full {
+    background: var(--primary);
+}
+.dark-mode .cool-timeline.white-timeline .timeline-post.even .timeline-meta .meta-details, 
+.dark-mode .ctl_road_map_wrp li.even .ctl-story-year, 
+.dark-mode .ctl_road_map_wrp li.even .ctl-story-title, 
+.dark-mode .ctl_road_map_wrp li.even .ctl-story-title a, 
+.dark-mode .cool-timeline.white-timeline .timeline-post.odd .timeline-meta .meta-details, 
+.dark-mode .ctl_road_map_wrp li.odd .ctl-story-year, 
+.dark-mode .ctl_road_map_wrp li.odd .ctl-story-title, 
+.dark-mode .ctl_road_map_wrp li.odd .ctl-story-title a {
+    color: var(--dark-accent);
+}
+.dark-mode .clean-skin-tm .cool-timeline.white-timeline .timeline-post.even .timeline-content h2.content-title, 
+.dark-mode .clean-skin-tm .cool-timeline.white-timeline .timeline-post.odd .timeline-content h2.content-title {
+    color: var(--dark-accent);
+}
+.dark-mode .cool-timeline .light-grey-post .timeline-content {
+    color: var(--dark-accent);
+}
+/* end -- copy to timeline */
+
