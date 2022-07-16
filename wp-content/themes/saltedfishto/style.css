@@ -66,7 +66,6 @@ body.dark-mode {
 
 .main-wrapper a {
     color: rgba(var(--accent-rgb), .7);
-    line-height: 0;
     text-decoration: none;
 }
 .dark-mode .main-wrapper a {
@@ -347,9 +346,58 @@ footer a:visited {
     color: rgba(var(--dark-accent-rgb), .7);
 }
 
-.not-found-page, .no-result {
+.not-found-page, .no-result-page, .no-post-page {
     font-family: "Share Tech Mono", monospace;
 }
+
+.sfto-thumbnail {
+    max-width: 150px;
+    width: 100%;
+}
+
+.sfto-badge {
+    background-color: rgba(var(--dark-primary-rgb),.7);
+}
+.dark-mode .sfto-badge {
+    background-color: rgba(var(--primary-rgb),.7);
+}
+
+.sfto-description-div a, 
+.sfto-badge a {
+    color: rgba(var(--dark-accent-rgb),.7);
+}
+.dark-mode .sfto-description-div a, 
+.dark-mode .sfto-badge a {
+    color: rgba(var(--accent-rgb),.7);
+}
+
+.sfto-description-div a:hover, 
+.sfto-badge a:hover {
+    color: var(--dark-accent);
+}
+.dark-mode .sfto-description-div a:hover, 
+.dark-mode .sfto-badge a:hover {
+    color: var(--accent);
+}
+
+.sfto-description-div a:visited, 
+.sfto-badge a:visited {
+    color: rgba(var(--dark-accent-rgb), .7);
+}
+.dark-mode .sfto-description-div a:visited, 
+.dark-mode .sfto-badge a:visited {
+    color: rgba(var(--accent-rgb), .7);
+}
+
+.sfto-description-div {
+    background-color: rgba(var(--dark-primary-rgb),.7);
+    color: rgba(var(--dark-accent-rgb),.7);
+}
+.dark-mode .sfto-description-div {
+    background-color: rgba(var(--primary-rgb),.7);
+    color: rgba(var(--accent-rgb),.7);
+}
+
 
 .wave-animated span {
     display: inline-block;

@@ -1,16 +1,19 @@
-<div class="container">
-    <header class="content-header">
-        <div class="meta mb-3">
-            <span class="date"><?php the_date() ?></span>
-            <?php the_tags( '<span class="tag"><i class="fa fa-tag"></i>', '</span><span class="tag"><i class="fa fa-tag"></i>', '</span>' ) ?>
-            <span class="comment">
-                <a href="#comments">
-                    <i class='fa fa-comment'></i>
-                    <?php comments_number() ?>
-                </a>
-            </span>
-        </div>
-    </header>
-    <?php the_content(); ?>
-    <?php comments_template() ?>
+<div class="pb-5">
+    <h3><?php the_title(); ?></h3>
+    <div>
+        <span>by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php echo get_the_author(); ?></a></span>
+        <span> on <?php the_date() ?></span>
+        <span> with 
+            <a href="#comments">
+                <?php comments_number() ?>
+            </a>
+        </span>
+    </div>
+    <div>
+        <?php the_tags( '<span class="m-1 badge badge-pill sfto-badge">', '</span><span class="m-1 badge badge-pill sfto-badge">', '</span>' ) ?>
+    </div>
+    <div class="p-4">
+        <?php the_content(); ?>
+    </div>
 </div>
+<?php comments_template() ?>
