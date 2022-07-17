@@ -111,6 +111,40 @@ body.dark-mode {
     border-color: rgba(var(--dark-accent-rgb), .5)
 }
 
+.main-wrapper .sfto-border-bottom {
+    border-bottom: 1px solid;
+    border-color: rgba(var(--accent-rgb), .5)
+}
+.dark-mode .main-wrapper .sfto-border-bottom {
+    border-bottom: 1px solid;
+    border-color: rgba(var(--dark-accent-rgb), .5)
+}
+
+.main-wrapper .sfto-border-left {
+    border-left: 1px solid;
+    border-color: rgba(var(--accent-rgb), .5)
+}
+.dark-mode .main-wrapper .sfto-border-left {
+    border-left: 1px solid;
+    border-color: rgba(var(--dark-accent-rgb), .5)
+}
+
+.main-wrapper .sfto-border-right {
+    border-right: 1px solid;
+    border-color: rgba(var(--accent-rgb), .5)
+}
+.dark-mode .main-wrapper .sfto-border-right {
+    border-right: 1px solid;
+    border-color: rgba(var(--dark-accent-rgb), .5)
+}
+
+.sfto-gradient {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+.dark-mode .sfto-gradient {
+    background: linear-gradient(to right, var(--dark-primary), var(--dark-secondary));
+}
+
 .sfto-sticky-top {
     position: fixed;
     width:100%;
