@@ -169,6 +169,9 @@ body.dark-mode {
     color: var(--dark-accent);
 }
 
+.transparent-bg {
+    background-color: transparent;
+}
 .sfto-nav.transparent-bg {
     background-color: transparent;
 }

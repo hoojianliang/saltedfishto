@@ -18,7 +18,7 @@
                 <div class="px-2 flex-grow-1">
                     <h3><small><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></small></h3>
                 </div>
-                <div class="px-2"><small><a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php echo get_the_author(); ?></a></small></div>
+                <div class="px-2"><small><a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="nofollow"><?php echo get_the_author(); ?></a></small></div>
             </div>
             <div class="d-flex flex-row justify-content-end pb-1">
                 <div class="px-2 flex-grow-1"><small><?php the_tags( '<span class="m-1 badge badge-pill sfto-badge">', '</span><span class="m-1 badge badge-pill sfto-badge">', '</span>' ) ?></small></div>

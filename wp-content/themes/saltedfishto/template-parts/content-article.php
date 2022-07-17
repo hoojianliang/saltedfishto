@@ -1,7 +1,7 @@
 <div class="pb-5">
     <h3><?php the_title(); ?></h3>
     <div>
-        <span>by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php echo get_the_author(); ?></a></span>
+        <span>by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="nofollow"><?php echo get_the_author(); ?></a></span>
         <span> on <?php the_date() ?></span>
         <span> with 
             <a href="#comments">
