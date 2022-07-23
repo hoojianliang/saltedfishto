@@ -632,3 +632,8 @@ footer a:visited {
 }
 /* end -- copy to timeline */
 
+/* Kofi */
+body .floatingchat-container-wrap {
+    left: auto;
+    right: 16px;
+}

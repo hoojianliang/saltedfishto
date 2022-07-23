@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	if ($(window).scrollTop() && $( ".sfto-nav.navbar" ).hasClass('transparent-enable')) {
+		$( ".sfto-nav.navbar" ).removeClass('transparent-bg').addClass('navbar-bg');
+	}
 	// add theme
 	$( "body" ).addClass(localStorage.getItem('theme') ?? 'light-mode');
 
