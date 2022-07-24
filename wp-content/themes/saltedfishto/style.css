@@ -326,7 +326,7 @@ div.sfto-banner {
     content: '';
     display: block;
     height: 0.2rem;
-    min-width: 40vw;
+    width: 40%;
 }
 .footer-divider::before {
     margin-right: 2rem;
@@ -633,7 +633,13 @@ footer a:visited {
 /* end -- copy to timeline */
 
 /* Kofi */
-body .floatingchat-container-wrap {
+body .floatingchat-container-wrap,
+body .floatingchat-container-wrap-mobi {
+    left: auto;
+    right: 16px;
+}
+body .floating-chat-kofi-popup-iframe,
+body .floating-chat-kofi-popup-iframe-mobi {
     left: auto;
     right: 16px;
 }
