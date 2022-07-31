@@ -44,7 +44,7 @@
                                 )
                             );
                         ?>
-                        <div class="d-flex justify-content-end sfto-control">          
+                        <div class="d-flex justify-content-end sfto-control d-none">          
                             <i class="fas fa-sun toggle light-toggle sfto-fa-button sfto-fa-border"></i>
                             <i class="fas fa-moon toggle dark-toggle sfto-fa-button sfto-fa-border"></i>
                         </div>
@@ -52,7 +52,7 @@
                             <form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url( '/' ); ?>">
                                 <div class="input-group">
                                     <input type="text" name="s" id="s" class="form-control sfto-transparent" placeholder="Search" aria-label="Search" aria-describedby="ssearch-bar">
-                                    <span class="input-group-text sfto-transparent"><button type="submit"><i class="fas fa-search sfto-fa-button sfto-fa-border"></i></button></span>
+                                    <span class="input-group-text sfto-transparent"><button type="submit" aria-label="Submit Search"><i class="fas fa-search sfto-fa-button sfto-fa-border"></i></button></span>
                                 </div>
                             </form>
                         </div>

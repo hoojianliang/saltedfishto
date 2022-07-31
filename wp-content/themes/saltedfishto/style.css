@@ -643,3 +643,22 @@ body .floating-chat-kofi-popup-iframe-mobi {
     left: auto;
     right: 16px;
 }
+
+@media only screen and (max-width: 750px)  {
+    body .floatingchat-container-wrap,
+    body .floatingchat-container-wrap-mobi {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 550)  {
+    body .floatingchat-container-wrap,
+    body .floatingchat-container-wrap-mobi {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 350px)  {
+    body .floatingchat-container-wrap,
+    body .floatingchat-container-wrap-mobi {
+        width: 50%;
+    }
+}

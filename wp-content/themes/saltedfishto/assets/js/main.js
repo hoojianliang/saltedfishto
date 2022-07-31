@@ -4,6 +4,7 @@ $(document).ready(function() {
 	}
 	// add theme
 	$( "body" ).addClass(localStorage.getItem('theme') ?? 'light-mode');
+	$( ".sfto-control" ).removeClass('d-none');
 
 	// toggle theme
 	$( ".sfto-nav .toggle" ).on( "click", function() {
